@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 200vh;
+        }
+        header{
+            position: fixed;
+            height: 52px;
+            width: 100vw;
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 10px;
+            top: 0;
+        }
+
+        .sidebar{
+            background-color: blue;
+            position: absolute;
+            width: 100px;
+            height: 100vh;
+            left: 0;
+            top: 6%;
+        }
+
+        section{
+            position: absolute;
+            left: 10%;
+            bottom: 60%;
+            
+        }
+
+        .sticky-widget{
+            position: sticky;
+            left: 10%;
+            height: 150px;
+            width: 250px;
+            background-color: purple;
+            top: 8%
+        }
+        
+        p{
+            font-size: large ;
+        }
+
+
+        footer{
+            position: absolute;
+            top: 100%;
+            background-color: black;
+            width: 100vw;
+            height: 100px;
+            color: aliceblue;
+            bottom: 200px;
+            
+        }
+
+        main{
+            height: 100vh;
+            
+        }
+    </style>
+</head>
+<body>
+    <header> Fixed Header</header>
+
+    <aside class="sidebar">SideBar absolute</aside>
+
+    <main>
+        <aside class="sticky-widget">Sticky widget</aside>
+
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim in consectetur dignissimos repellat distinctio quos natus doloribus rem iste, tenetur, provident itaque tempora accusantium fuga quaerat laborum voluptas obcaecati qui illo soluta voluptates consequuntur, pariatur blanditiis. Quae dolores modi porro, autem laborum veniam, commodi eaque veritatis expedita architecto accusantium in.
+            </p>
+
+            <p>More content .....!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cupiditate, magnam aliquam odio, culpa recusandae architecto dolore eius necessitatibus laborum fugiat? Sunt repudiandae alias ab dicta molestias incidunt rerum nisi.</p>
+            <p></p>
+
+        </section>
+    </main>
+
+    <footer>
+        static footer
+    </footer>
+</body>
+</html>

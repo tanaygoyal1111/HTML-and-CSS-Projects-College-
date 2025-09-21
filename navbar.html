@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            height: 60px;
+        }
+
+        .box1{
+            background-color: navy;
+            flex-grow: 2;
+            display: flex;
+            padding-left: 20px;
+            align-items: center;
+        }
+
+        .box2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            background-color: navy;
+            flex-grow: 3;
+        }
+
+        a{
+            color: beige;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        .box1 > h1{
+            color: beige;
+        }
+
+        a:hover{
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1>My Website</h1>
+        </div>
+        <div class="box2">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>
